@@ -17,6 +17,9 @@ class AzureAIService(AIService):
         self.speech_key = os.getenv("AZURE_SPEECH_SERVICE_KEY")
         self.speech_region = os.getenv("AZURE_SPEECH_SERVICE_REGION")
 
+        print(f"speech key: {self.speech_key}")
+        print(f"speech region: {self.speech_region}")
+
         self.speech_config = SpeechConfig(subscription=self.speech_key, region=self.speech_region)
         # self.speech_config.speech_synthesis_voice_name='en-US-JennyMultilingualV2Neural'
 
