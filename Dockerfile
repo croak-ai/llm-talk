@@ -33,6 +33,7 @@ RUN apt-get -y install build-essential libssl-dev ca-certificates libasound2 wge
 
 ENV PYTHONUNBUFFERED=1
 
+COPY entrypoint.sh /app
 WORKDIR /app
 
 
