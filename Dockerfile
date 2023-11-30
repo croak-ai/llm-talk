@@ -37,4 +37,4 @@ WORKDIR /app
 
 
 # run
-CMD [["./entrypoint.sh"]]
+CMD ["./entrypoint.sh"]
